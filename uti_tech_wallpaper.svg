@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Versão ideal para --bar-logo-glpi (Parte interna) -->
+    <g transform="translate(25, 25)">
+        <!-- Ícone do Monitor -->
+        <rect x="10" y="20" width="130" height="100" rx="10" stroke="white" stroke-width="8" fill="none"/>
+        <path d="M 50 120 L 40 150 L 110 150 L 100 120 Z" fill="none" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+        <!-- Símbolo </> simplificado -->
+        <path d="M 60 70 L 50 80 L 60 90" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M 90 70 L 100 80 L 90 90" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <line x1="82" y1="65" x2="68" y2="95" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    </g>
+</svg>
