@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTI TECH - Soluções em Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        .logo-title {
+            font-family: 'Cinzel', serif;
+        }
+        .btn-download {
+            background-color: #0f172a;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-download:hover {
+            background-color: #334155;
+        }
+        .dark-bg {
+            background-color: #1e293b;
+            border-radius: 0.5rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
 
+<div class="max-w-4xl mx-auto">
+    <!-- 1. LOGO PRINCIPAL (CENTRALIZADA) -->
+    <div class="card">
+         <div id="capture-main" class="p-8 bg-white inline-block">
+            <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ícone de Monitor -->
+                <g transform="translate(75, 20)">
+                    <rect x="0" y="20" width="150" height="110" rx="8" stroke="black" stroke-width="6" fill="none"/>
+                    <rect x="10" y="30" width="130" height="90" rx="4" fill="#f8fafc" stroke="black" stroke-width="2"/>
+                    <path d="M 50 130 L 40 160 L 110 160 L 100 130 Z" fill="none" stroke="black" stroke-width="6" stroke-linejoin="round"/>
+                    <path d="M 60 160 Q 75 175 90 160" fill="none" stroke="black" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Símbolo de Código </> -->
+                    <path d="M 60 75 L 45 90 L 60 105" stroke="black" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M 90 75 L 105 90 L 90 105" stroke="black" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="82" y1="70" x2="68" y2="110" stroke="black" stroke-width="5" stroke-linecap="round"/>
+                    <!-- Barra de ferramentas superior -->
+                    <circle cx="25" cy="40" r="3" fill="black"/>
+                    <circle cx="37" cy="40" r="3" fill="black"/>
+                    <circle cx="49" cy="40" r="3" fill="black"/>
+                    <line x1="65" y1="40" x2="135" y2="40" stroke="black" stroke-width="2"/>
+                </g>
+                <!-- Texto -->
+                <text x="50%" y="235" text-anchor="middle" font-family="'Cinzel', serif" font-size="42" font-weight="600" fill="black">UTI TECH</text>
+                <text x="50%" y="270" text-anchor="middle" font-family="'Inter', sans-serif" font-size="18" font-weight="400" fill="black" style="letter-spacing: 1px;">Soluções em Tecnologia</text>
+            </svg>
+        </div>
+        <br>
+    </div>
+
+<script>
+    function downloadPNG(id, filename) {
+        const target = document.getElementById(id);
+        html2canvas(target, {
+            scale: 4,
+            backgroundColor: null
+        }).then(canvas => {
+            const link = document.createElement('a');
+            link.download = filename + '.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    }
+</script>
+
+</body>
+</html>
