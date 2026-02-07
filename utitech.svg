@@ -1,0 +1,13 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Ícone Minimalista Branco para Sistemas -->
+    <g transform="translate(10, 10) scale(0.55)">
+        <!-- Moldura do Monitor -->
+        <rect x="0" y="20" width="150" height="110" rx="8" stroke="white" stroke-width="12" fill="none"/>
+        <!-- Base do Monitor -->
+        <path d="M 50 130 L 40 160 L 110 160 L 100 130 Z" fill="none" stroke="white" stroke-width="12" stroke-linejoin="round"/>
+        <!-- Símbolo de Código </> -->
+        <path d="M 55 75 L 40 90 L 55 105" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 95 75 L 110 90 L 95 105" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="85" y1="70" x2="65" y2="110" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    </g>
+</svg>
